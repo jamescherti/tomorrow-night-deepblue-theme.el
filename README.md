@@ -6,6 +6,19 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ![](https://raw.githubusercontent.com/jamescherti/emacs-tomorrow-night-deepblue-theme/master/.screenshot.png)
 
+# Installation
+
+```
+mkdir -p ~/.emacs.d/themes
+cd ~/.emacs.d/themes
+git clone https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme
+```
+
+Finally, add the following to your `~/.emacs.d/init.el`:
+```
+(add-to-list 'load-path "~/.emacs.d/themes/emacs-tomorrow-night-deepblue-theme")
+(require 'tomorrow-night-deepblue-theme)
+```
 
 ## Authors
 
