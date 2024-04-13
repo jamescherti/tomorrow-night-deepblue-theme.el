@@ -8,15 +8,19 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 # Installation
 
+Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
 ```
 mkdir -p ~/.emacs.d/themes
 cd ~/.emacs.d/themes
 git clone https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme
 ```
 
-Finally, add the following to your `~/.emacs.d/init.el`:
+After downloading the theme, you need to modify your Emacs configuration file to include this theme. Open or create the `~/.emacs.d/init.el` directory and add the following lines of code:
 ```
+;; Add the theme's directory to Emacs' the path where Emacs searches for loading files
 (add-to-list 'load-path "~/.emacs.d/themes/emacs-tomorrow-night-deepblue-theme")
+
+;; Load the Tomorrow Night Deepblue theme
 (require 'tomorrow-night-deepblue-theme)
 ```
 
