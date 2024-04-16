@@ -178,7 +178,7 @@ names to which it refers are bound."
      (hl-line ((,class (:background ,current-line))))
      (border ((,class (:background ,current-line))))
      (border-glyph ((,class (nil))))
-     (highlight ((,class (:background ,green))))
+     (highlight ((,class (:background ,selection))))
      (link ((,class (:foreground ,blue))))
      (link-visited ((,class (:foreground ,purple))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
