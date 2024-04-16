@@ -172,13 +172,23 @@ names to which it refers are bound."
      (which-func ((,class (:foreground ,blue :background nil :weight bold))))
 
      ;; Emacs interface
-     (cursor ((,class (:background ,red))))
+     (cursor ((,class (:background "IndianRed"))))
      (fringe ((,class (:background ,current-line))))
      (linum ((,class (:background ,current-line))))
      (hl-line ((,class (:background ,current-line))))
+     (fill-column-indicator ((,class (:foreground ,current-line
+                                                  :box nil
+                                                  :inverse-video nil
+                                                  :overline nil
+                                                  :slant normal
+                                                  :strike-through nil
+                                                  :underline nil
+                                                  :weight normal
+                                                  :stipple nil))))
      (border ((,class (:background ,current-line))))
      (border-glyph ((,class (nil))))
      (highlight ((,class (:background ,selection))))
+     (lsp-face-highlight-read ((,class (:background ,selection))))
      (link ((,class (:foreground ,blue))))
      (link-visited ((,class (:foreground ,purple))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
