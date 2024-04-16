@@ -4,13 +4,12 @@ The **Tomorrow Night Deepblue Emacs theme** is a beautiful deep blue variant of 
 
 The **Tomorrow Night Deepblue theme** features a deep blue background color that creates a calming atmosphere. The theme is also a great choice for those who miss the blue themes that were trendy a few years ago.
 
-**Table of Contents**
+## Table of Contents
 
-- [tomorrow-night-deepblue-theme.el (Emacs theme)](#tomorrow-night-deepblue-themeel-emacs-theme)
-    - [Screenshot](#screenshot)
+- [Screenshot](#screenshot)
 - [Installation](#installation)
-    - [Authors](#authors)
-    - [Links](#links)
+- [Authors](#authors)
+- [Links](#links)
 
 ## Screenshot
 
