@@ -13,9 +13,9 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ## Screenshot
 
-The theme was actually inspired by classic DOS text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
-
 ![](https://raw.githubusercontent.com/jamescherti/emacs-tomorrow-night-deepblue-theme/master/.screenshot.png)
+
+The theme was inspired by classic DOS text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
 
 # Installation
 
