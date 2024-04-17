@@ -1,8 +1,8 @@
-;;; GNU Emacs port of the Tomorrow Theme Deepblue.
+;;; GNU Emacs port of the Tomorrow Theme Deepblue -*- lexical-binding: t -*-
 
 ;;; Tomorrow Theme Deepblue
 ;;
-;; Tomorrow Night Deepblue theme maintainer: James Cherti
+;; Maintainer: James Cherti
 ;; URL: https://github.com/jamescherti/emacs-tomorrow-night-deepblue
 ;; Keywords: faces, theme, accessibility
 
@@ -40,10 +40,8 @@
 ;; tomorrow-night-deepblue theme is also a great choice for programmer who miss
 ;; the blue themes that were trendy a few years ago.
 ;;
-;; This theme was ported to GNU Emacs by Chris Charles Rewritten by Steve
-;; Purcell <steve@sanityinc.com> for compatibility Update to match master by
-;; Donald Curtis <dcurtis@milkbox.net>.
-
+;; This theme was ported to GNU Emacs by Chris Charles, Steve Purcell, and
+;; Donald Curtis.
 
 ;;; Code:
 
@@ -103,7 +101,7 @@ names to which it refers are bound."
      (outline-4 ((,class (:slant normal :foreground ,comment))))
 
      ;; Font-lock stuff
-     (font-lock-builtin-face ((,class (:foreground ,aqua))))
+     (font-lock-builtin-face ((,class (:foreground ,blue))))
      (font-lock-comment-delimiter-face ((,class (:foreground ,comment :slant italic))))
      (font-lock-comment-face ((,class (:foreground ,comment :slant italic))))
      (font-lock-constant-face ((,class (:foreground ,blue))))
@@ -336,7 +334,10 @@ names to which it refers are bound."
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
      (org-agenda-done ((,class (:foreground ,green))))
      (org-agenda-dimmed-todo-face ((,class (:foreground ,comment))))
-     (org-block ((,class (:foreground ,orange))))
+     (org-block ((,class (:background ,current-line))))
+     (org-block-begin-line ((,class (:underline t :foreground ,aqua :background ,current-line))))
+     (org-block-end-line ((,class (:overline t :foreground ,aqua :background ,current-line))))
+     (org-src ((,class (:background ,current-line))))
      (org-code ((,class (:foreground ,yellow))))
      (org-column ((,class (:background ,current-line))))
      (org-column-title ((,class (:inherit org-column :weight bold :underline t))))
