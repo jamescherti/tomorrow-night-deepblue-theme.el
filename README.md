@@ -46,5 +46,5 @@ The tomorrow-night-deepblue theme is based on Tomorrow Night Blue by Chris Kemps
 
 ## Links
 - There is also a Vim version of this theme: [Tomorrow Night Deepblue Color Scheme for the Vim editor]( https://github.com/jamescherti/vim-tomorrow-night-deepblue)
-- Tomorrow Night Deepblue Emacs theme Git repository: [jamescherti/tomorrow-night-deepblue-theme](https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme)
-- First announcement in James Cherti's website about the Tomorrow Night Deepblue Emacs theme: https://www.jamescherti.com/emacs-tomorrow-night-deepblue-theme-a-refreshing-color-scheme-with-a-deep-blue-background/
+- [Tomorrow Night Deepblue Emacs theme GitHub repository](https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme)
+- [Announcement in James Cherti's website about the Tomorrow Night Deepblue Emacs theme](https://www.jamescherti.com/emacs-tomorrow-night-deepblue-theme-a-refreshing-color-scheme-with-a-deep-blue-background/)
