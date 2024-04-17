@@ -15,6 +15,8 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ![](https://raw.githubusercontent.com/jamescherti/emacs-tomorrow-night-deepblue-theme/master/.screenshot.png)
 
+The theme was actually inspired by classic DOS text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
+
 # Installation
 
 Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
@@ -45,6 +47,6 @@ Tomorrow Night Deepblue theme maintainer: [James Cherti](https://www.jamescherti
 The tomorrow-night-deepblue theme is based on Tomorrow Night Blue by Chris Kempson, Steve Purcell, and Donald Curtis.
 
 ## Links
-- There is also a Vim version of this theme: [Tomorrow Night Deepblue Color Scheme for the Vim editor]( https://github.com/jamescherti/vim-tomorrow-night-deepblue)
-- [Tomorrow Night Deepblue Emacs theme GitHub repository](https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme)
+- [Vim version: Tomorrow Night Deepblue Color Scheme for the Vim editor]( https://github.com/jamescherti/vim-tomorrow-night-deepblue)
+- [GitHub repository: Tomorrow Night Deepblue Emacs theme](https://github.com/jamescherti/emacs-tomorrow-night-deepblue-theme)
 - [Announcement in James Cherti's website about the Tomorrow Night Deepblue Emacs theme](https://www.jamescherti.com/emacs-tomorrow-night-deepblue-theme-a-refreshing-color-scheme-with-a-deep-blue-background/)
