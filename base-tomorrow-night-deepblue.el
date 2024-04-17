@@ -106,7 +106,7 @@ names to which it refers are bound."
      (font-lock-builtin-face ((,class (:foreground ,aqua))))
      (font-lock-comment-delimiter-face ((,class (:foreground ,comment :slant italic))))
      (font-lock-comment-face ((,class (:foreground ,comment :slant italic))))
-     (font-lock-constant-face ((,class (:foreground ,aqua))))
+     (font-lock-constant-face ((,class (:foreground ,blue))))
      (font-lock-doc-face ((,class (:foreground ,comment))))
      (font-lock-doc-string-face ((,class (:foreground ,yellow))))
      (font-lock-function-name-face ((,class (:foreground ,blue))))
