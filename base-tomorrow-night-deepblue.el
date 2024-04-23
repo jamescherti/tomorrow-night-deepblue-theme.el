@@ -187,19 +187,19 @@ names to which it refers are bound."
      (border-glyph ((,class (nil))))
      (highlight ((,class (:background ,selection))))
      (lsp-face-highlight-read ((,class (:background ,selection))))
-     (link ((,class (:foreground ,blue))))
+     (link ((,class (:foreground ,blue :underline t))))
      (link-visited ((,class (:foreground ,purple))))
      (gui-element ((,class (:background ,current-line :foreground ,foreground))))
      (mode-line ((,class (:background ,selection :foreground ,foreground))))
      (mode-line-inactive ((,class (:background ,current-line :foreground ,foreground))))
-     (mode-line-buffer-id ((,class (:foreground ,purple :background nil))))
+     (mode-line-buffer-id ((,class (:foreground ,purple :background unspecified))))
      (mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
      (mode-line-highlight ((,class (:foreground ,purple :box nil :weight bold))))
      (minibuffer-prompt ((,class (:foreground ,blue))))
      (region ((,class (:background ,selection))))
      (secondary-selection ((,class (:background ,current-line))))
 
-     (header-line ((,class (:inherit mode-line :foreground ,purple :background nil))))
+     (header-line ((,class (:inherit mode-line :foreground ,purple :background unspecified))))
 
      (trailing-whitespace ((,class (:background ,red :foreground ,yellow))))
      (whitespace-empty ((,class (:foreground ,red :background ,yellow))))
@@ -225,8 +225,8 @@ names to which it refers are bound."
      ;; Parenthesis dimming (parenface)
      (paren-face ((,class (:foreground ,comment :background nil))))
 
-     (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face :weight normal))))
-     (sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
+     (sh-heredoc ((,class (:foreground unspecified :inherit font-lock-string-face :weight normal))))
+     (sh-quoted-exec ((,class (:foreground unspecified :inherit font-lock-preprocessor-face))))
      (slime-highlight-edits-face ((,class (:weight bold))))
      (slime-repl-input-face ((,class (:weight normal :underline nil))))
      (slime-repl-prompt-face ((,class (:underline nil :weight bold :foreground ,purple))))
@@ -306,7 +306,6 @@ names to which it refers are bound."
      (magit-log-head-label-tags ((,class (:foreground ,aqua :box nil :weight bold))))
      (magit-section-title ((,class (:inherit diff-hunk-header))))
 
-     (link ((,class (:foreground nil :underline t))))
      (widget-button ((,class (:underline t))))
      (widget-field ((,class (:background ,current-line :box (:line-width 1 :color ,foreground)))))
 
