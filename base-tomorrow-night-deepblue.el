@@ -361,7 +361,7 @@ names to which it refers are bound."
 
      (markdown-url-face ((,class (:inherit link))))
      (markdown-link-face ((,class (:foreground ,blue :underline t))))
-     (eglot-diagnostic-tag-unnecessary-face ((,class (:foreground nil :underline ,red))))
+     (eglot-diagnostic-tag-unnecessary-face ((,class (:underline ,red))))
 
      (hl-sexp-face ((,class (:background ,current-line))))
      (highlight-80+ ((,class (:background ,current-line))))
