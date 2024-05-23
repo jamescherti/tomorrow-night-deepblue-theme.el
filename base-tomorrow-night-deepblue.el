@@ -62,11 +62,12 @@
 
 
 (defmacro color-theme-tomorrow--with-colors (mode &rest body)
-  "Execute `BODY' in a scope with variables bound to the various tomorrow colors.
+  "Execute `BODY' in a scope with variables bound to various tomorrow colors.
 
-`MODE' should be set to either 'day, 'night, 'night-eighties, 'night-blue or 'night-bright."
+`MODE' should be set to either day, night, night-eighties, night-blue or
+night-bright."
   `(let* ((colors (or (cdr (assoc ,mode color-theme-tomorrow-colors))
-                      (error "no such theme flavor")))
+                      (error "No such theme flavor")))
           (background   (cdr (assoc 'background colors)))
           (current-line (cdr (assoc 'current-line colors)))
           (selection    (cdr (assoc 'selection colors)))
@@ -83,7 +84,7 @@
      ,@body))
 
 (defmacro color-theme-tomorrow--face-specs ()
-  "Return a backquote which defines a list of face specs.
+  "Define a list of face specs and return a backquote.
 
 It expects to be evaluated in a scope in which the various color
 names to which it refers are bound."
@@ -513,7 +514,7 @@ names to which it refers are bound."
      )))
 
 (defmacro color-theme-tomorrow--frame-parameter-specs ()
-  "Return a backquote which defines a list of frame parameter specs.
+  "Define a list of frame parameter and return a backquote which .
 
 These are required by color-theme's `color-theme-install', but
 not by the new `deftheme' mechanism. It expects to be evaluated
@@ -528,6 +529,7 @@ are bound."
       (mouse-color . ,aqua)))))
 
 (defun color-theme-tomorrow--theme-name (mode)
+  "Return the tomorrow theme name. MODE is the mode."
   (intern (format "tomorrow-%s" (symbol-name mode))))
 
 (defmacro color-theme-tomorrow--define-theme (mode)
@@ -546,26 +548,6 @@ are bound."
          `(ansi-color-names-vector (vector ,foreground ,red ,green ,yellow ,blue ,purple ,aqua ,background))
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
-
-
-(defun color-theme-tomorrow-real (mode)
-  "Apply the tomorrow variant theme."
-  (if (fboundp 'load-theme)
-      (let ((name (color-theme-tomorrow--theme-name mode)))
-        (if (> emacs-major-version 23)
-            (load-theme name t)
-          (load-theme name)))
-    (progn
-      (require 'color-theme)
-      (color-theme-tomorrow--with-colors
-       mode
-       (color-theme-install
-        `(,(intern (concat "color-theme-tomorrow-" (symbol-name mode)))
-          ,@(color-theme-tomorrow--frame-parameter-specs)
-          ,@(color-theme-tomorrow--face-specs)))
-       ;; ansi-color - comint and other modes that handle terminal color escape sequences
-       (setq ansi-color-names-vector (vector foreground red green yellow blue purple aqua background))
-       (setq ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
