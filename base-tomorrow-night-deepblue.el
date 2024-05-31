@@ -232,6 +232,7 @@ names to which it refers are bound."
      (completions-annotations ((,class (:foreground ,comment :slant italic))))
      (completions-common-part ((,class (:foreground ,blue))))
      (completions-first-difference ((,class (:foreground ,orange :weight bold))))
+     (prescient-primary-highlight ((,class (:foreground ,blue))))
      (counsel-css-selector-depth-face-1 ((,class (:foreground ,yellow))))
      (counsel-css-selector-depth-face-2 ((,class (:foreground ,orange))))
      (counsel-css-selector-depth-face-3 ((,class (:foreground ,green))))
