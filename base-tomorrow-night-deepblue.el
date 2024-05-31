@@ -1096,7 +1096,7 @@ names to which it refers are bound."
      (org-habit-overdue-future-face ((,class (:foreground ,background :background ,red))))
      (org-habit-ready-face ((,class (:foreground ,background :background ,aqua))))
      (org-habit-ready-future-face ((,class (:foreground ,background :background ,green))))
-     (org-headline-done ((,class (:foreground ,green :strike-through t))))
+     (org-headline-done ((,class (:foreground ,green))))
      (org-headline-todo ((,class (:foreground ,red))))
      (org-hide ((,class (:foreground ,background :background ,background))))
      ;; (org-hide ((,class (:foreground ,current-line))))
