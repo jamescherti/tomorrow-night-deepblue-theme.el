@@ -655,7 +655,7 @@ names to which it refers are bound."
      (guide-key/key-face ((,class (:foreground ,comment))))
      (guide-key/prefix-command-face ((,class (:foreground ,blue))))
      ;; (header-line ((,class (:inherit mode-line :foreground ,purple :background unspecified))))
-     (header-line ((,class (:inherit mode-line-inactive :foreground ,aqua :background unspecified))))
+     (header-line ((,class (:inherit mode-line-inactive :foreground ,blue :background unspecified))))
      (helm-M-x-key ((,class (:foreground ,orange :underline t))))
      (helm-bookmark-addressbook ((,class (:foreground ,red))))
      (helm-bookmark-file ((,class (:foreground ,aqua))))
