@@ -521,7 +521,7 @@ names to which it refers are bound."
      ;; (font-lock-comment-face ((,class (:foreground ,comment))))  ;; cng
      (font-lock-constant-face ((,class (:foreground ,blue))))
      ;; (font-lock-delimiter-face ((,class (:foreground ,purple))))  ;; chg
-     (font-lock-doc-face ((,class (:foreground ,comment))))
+     (font-lock-doc-face ((,class (:foreground ,green))))
      ;; (font-lock-doc-face ((,class (:foreground ,purple))))  ;; chg
      (font-lock-doc-string-face ((,class (:foreground ,yellow))))
      (font-lock-escape-face ((,class (:foreground ,yellow))))
@@ -534,7 +534,8 @@ names to which it refers are bound."
      (font-lock-negation-char-face ((,class (:foreground ,green))))
      ;; (font-lock-negation-char-face ((,class (:foreground ,orange))))
      (font-lock-number-face ((,class (:foreground ,blue))))
-     (font-lock-operator-face ((,class (:foreground ,orange))))
+     ;; (font-lock-operator-face ((,class (:foreground ,orange))))  ;; chg
+     (font-lock-operator-face ((,class (:foreground ,blue))))
      (font-lock-preprocessor-face ((,class (:foreground ,purple))))
      (font-lock-property-name-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-property-use-face ((,class (:inherit font-lock-variable-name-face))))
@@ -548,7 +549,8 @@ names to which it refers are bound."
      ;; (font-lock-type-face ((,class (:foreground ,yellow))))  ;; chg
      (font-lock-variable-name-face ((,class (:foreground ,orange))))
      ;; (font-lock-variable-name-face ((,class (:foreground ,yellow))))
-     (font-lock-variable-use-face ((,class (:inherit font-lock-variable-name-face))))
+     ;; (font-lock-variable-use-face ((,class (:inherit font-lock-variable-name-face)))) ;; chg
+     (font-lock-variable-use-face ((,class (:inherit default))))
      (font-lock-warning-face ((,class (:weight bold :foreground ,red))))
      ;; (fringe ((,class (:background ,low-contrast-bg :foreground ,comment))))
      (fringe ((,class (:background ,background))))
