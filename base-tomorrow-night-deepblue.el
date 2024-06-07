@@ -93,7 +93,7 @@ names to which it refers are bound."
      (shadow ((,class (:foreground ,comment))))
      (success ((,class (:foreground ,green))))  ;; Change to ,comment?
      (error ((,class (:foreground ,red))))
-     (warning ((,class (:foreground ,orange))))
+     (warning ((,class (:foreground ,red))))
      (border ((,class (:background ,contrast-bg :foreground ,highlight))))
      (border-glyph ((,class (nil))))
      (Info-quoted ((,class (:inherit font-lock-constant-face))))
