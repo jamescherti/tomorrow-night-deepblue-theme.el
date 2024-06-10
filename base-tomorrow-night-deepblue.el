@@ -2,9 +2,11 @@
 
 ;;; Tomorrow Night Deepblue
 ;;
-;; Maintainer: James Cherti
+;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
-;; Keywords: faces, theme, accessibility
+;; Package-Requires: ((emacs "24.1"))
+;; Keywords: faces themes
+;; Version: 1
 
 ;; This file is NOT part of GNU Emacs.
 
