@@ -1468,6 +1468,7 @@ are bound."
 
 ;;;###autoload
 (defun color-theme-tomorrow-night-deepblue ()
+  "Apply the Tomorrow Night Deepblue theme."
   (interactive)
   (color-theme-load-tomorrow-night 'night-deepblue))
 
