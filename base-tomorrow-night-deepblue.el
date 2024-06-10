@@ -1,9 +1,9 @@
-;;; base-tomorrow-night-deepblue.el --- Tomorrow Night Deepblue -*- lexical-binding: t -*-
+;;; base-tomorrow-night-deepblue.el --- The Tomorrow Night Deepblue color theme -*- lexical-binding: t -*-
 
 ;;; Tomorrow Night Deepblue
 ;;
 ;; Maintainer: James Cherti
-;; URL: https://github.com/jamescherti/emacs-tomorrow-night-deepblue
+;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
 ;; Keywords: faces, theme, accessibility
 
 ;; This file is NOT part of GNU Emacs.
