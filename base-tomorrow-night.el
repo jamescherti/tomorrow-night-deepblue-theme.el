@@ -1,10 +1,10 @@
-;;; base-tomorrow-night-deepblue.el --- The Tomorrow Night Deepblue color theme -*- lexical-binding: t -*-
+;;; base-tomorrow-night.el --- The Tomorrow Night Deepblue color theme -*- lexical-binding: t -*-
 
 ;;; Tomorrow Night Deepblue
 ;;
 ;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
-;; Package-Requires: ((emacs "24.1"))
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces themes
 ;; Version: 1
 
@@ -37,7 +37,7 @@
 
 ;;; Code:
 
-(defconst color-theme-tomorrow-colors
+(defconst base-tomorrow-night
   '((night-deepblue . ((background . "#00006f")
                        (current-line . "#00346e")
                        (selection . "#003f8e")
@@ -52,12 +52,12 @@
                        (purple . "#ebbbff")
                        (darkblue . "#00005f")))))
 
-(defmacro color-theme-tomorrow--with-colors (mode &rest body)
+(defmacro base-tomorrow-night--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to various tomorrow colors.
 
 `MODE' should be set to either day, night, night-eighties, night-blue or
 night-bright."
-  `(let* ((colors (or (cdr (assoc ,mode color-theme-tomorrow-colors))
+  `(let* ((colors (or (cdr (assoc ,mode base-tomorrow-night))
                       (error "No such theme flavor")))
           (background   (cdr (assoc 'background colors)))
           (current-line (cdr (assoc 'current-line colors)))
@@ -80,7 +80,7 @@ night-bright."
           (class '((class color) (min-colors 89))))
      ,@body))
 
-(defmacro color-theme-tomorrow--face-specs ()
+(defmacro base-tomorrow-night--face-specs ()
   "Define a list of face specs and return a backquote.
 
 It expects to be evaluated in a scope in which the various color
@@ -407,7 +407,7 @@ names to which it refers are bound."
      (edts-face-warning-line ((,class (:background unspecified :inherit flymake-warnline))))
      (edts-face-warning-mode-line ((,class (:background unspecified :foreground ,orange :weight bold))))
      (eglot-diagnostic-tag-unnecessary-face ((,class (:underline ,red))))
-     (eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))
+     ;; (eldoc-highlight-function-argument ((,class (:foreground ,green :weight bold))))  ; Removed from Emacs 25.1
      (elfeed-log-debug-level-face ((,class (:foreground ,comment))))
      (elfeed-log-error-level-face ((,class (:inherit error))))
      (elfeed-log-info-level-face ((,class (:inherit success))))
@@ -1412,10 +1412,9 @@ names to which it refers are bound."
      (ztreep-expand-sign-face ((,class (:foreground ,foreground))))
      (ztreep-header-face ((,class (:forground ,yellow :weight bold))))
      (ztreep-leaf-face ((,class (:foreground ,aqua))))
-     (ztreep-node-face ((,class (:foreground ,foreground))))
-     )))
+     (ztreep-node-face ((,class (:foreground ,foreground)))))))
 
-(defmacro color-theme-tomorrow--frame-parameter-specs ()
+(defmacro base-tomorrow-night--frame-parameter-specs ()
   "Define a list of frame parameter and return a backquote which .
 
 These are required by color-theme's `color-theme-install', but
@@ -1430,20 +1429,20 @@ are bound."
       (foreground-color . ,foreground)
       (mouse-color . ,aqua)))))
 
-(defun color-theme-tomorrow--theme-name (mode)
+(defun base-tomorrow-night--theme-name (mode)
   "Return the tomorrow theme name. MODE is the mode."
   (intern (format "tomorrow-%s" (symbol-name mode))))
 
-(defmacro color-theme-tomorrow--define-theme (mode)
+(defmacro base-tomorrow-night--define-theme (mode)
   "Define a theme for the tomorrow variant `MODE'."
-  (let ((name (color-theme-tomorrow--theme-name mode))
+  (let ((name (base-tomorrow-night--theme-name mode))
         (doc (format "tomorrow-%s" mode)))
     `(progn
        (deftheme ,name ,doc)
-       (color-theme-tomorrow--with-colors
+       (base-tomorrow-night--with-colors
         ',mode
         (apply 'custom-theme-set-faces ',name
-               (color-theme-tomorrow--face-specs))
+               (base-tomorrow-night--face-specs))
         (custom-theme-set-variables
          ',name
          `(fci-rule-color ,current-line)
@@ -1454,7 +1453,7 @@ are bound."
 ;; (defun color-theme-load-tomorrow-night (mode)
 ;;   "Apply the Tomorrow variant theme MODE."
 ;;   (if (fboundp 'load-theme)
-;;       (let ((name (color-theme-tomorrow--theme-name mode)))
+;;       (let ((name (base-tomorrow-night--theme-name mode)))
 ;;         (mapc #'disable-theme custom-enabled-themes)
 ;;         (cond
 ;;          ((> emacs-major-version 23)
@@ -1474,10 +1473,10 @@ are bound."
 ;;   (interactive)
 ;;   (color-theme-load-tomorrow-night 'night-deepblue))
 
-(provide 'base-tomorrow-night-deepblue)
+(provide 'base-tomorrow-night)
 
 ;; Local Variables:
 ;; byte-compile-warnings: (not cl-functions)
 ;; End:
 
-;;; base-tomorrow-night-deepblue.el ends here
+;;; base-tomorrow-night.el ends here

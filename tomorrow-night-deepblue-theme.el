@@ -37,7 +37,8 @@
 
 ;;; Code:
 
-(require 'base-tomorrow-night-deepblue)
-(color-theme-tomorrow--define-theme night-deepblue)
+(require 'base-tomorrow-night)
+(base-tomorrow-night--define-theme night-deepblue)
+;; (provide-theme 'tomorrow-night-deepblue)
 
 ;;; tomorrow-night-deepblue-theme.el ends here
