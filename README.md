@@ -28,7 +28,7 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to 
    :type git
    :host github
    :repo "jamescherti/tomorrow-night-deepblue-theme.el"))
-(color-theme-tomorrow-night-deepblue)
+(load-theme 'tomorrow-night-deepblue t)
 ```
 
 ## Manual Installation
@@ -46,7 +46,7 @@ After downloading the theme, you need to modify your Emacs configuration file to
 ;; files and require the Tomorrow Night Deepblue theme
 (add-to-list 'load-path "~/.emacs.d/themes/emacs-tomorrow-night-deepblue-theme")
 (require 'tomorrow-night-deepblue-theme)
-(color-theme-tomorrow-night-deepblue)
+(load-theme 'tomorrow-night-deepblue t)
 ```
 
 ## Authors

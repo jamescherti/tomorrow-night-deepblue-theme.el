@@ -1449,28 +1449,28 @@ are bound."
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
-(defun color-theme-load-tomorrow-night (mode)
-  "Apply the Tomorrow variant theme MODE."
-  (if (fboundp 'load-theme)
-      (let ((name (color-theme-tomorrow--theme-name mode)))
-        (mapc #'disable-theme custom-enabled-themes)
-        (cond
-         ((> emacs-major-version 23)
-          (load-theme name t))
-         (t
-          (load-theme name))))
-    (error "The `load-theme' function is not available. Ensure you are using a compatible version of Emacs")))
+;; (defun color-theme-load-tomorrow-night (mode)
+;;   "Apply the Tomorrow variant theme MODE."
+;;   (if (fboundp 'load-theme)
+;;       (let ((name (color-theme-tomorrow--theme-name mode)))
+;;         (mapc #'disable-theme custom-enabled-themes)
+;;         (cond
+;;          ((> emacs-major-version 23)
+;;           (load-theme name t))
+;;          (t
+;;           (load-theme name))))
+;;     (error "The `load-theme' function is not available. Ensure you are using a compatible version of Emacs")))
 
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;;;###autoload
-(defun color-theme-tomorrow-night-deepblue ()
-  "Apply the Tomorrow Night Deepblue theme."
-  (interactive)
-  (color-theme-load-tomorrow-night 'night-deepblue))
+;; ;;;###autoload
+;; (defun color-theme-tomorrow-night-deepblue ()
+;;   "Apply the Tomorrow Night Deepblue theme."
+;;   (interactive)
+;;   (color-theme-load-tomorrow-night 'night-deepblue))
 
 (provide 'base-tomorrow-night-deepblue)
 
