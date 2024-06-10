@@ -19,6 +19,17 @@ The theme was inspired by classic DOS text editors such as QuickBASIC, RHIDE, an
 
 # Installation
 
+## Install using straight (preferred)
+
+To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to add the following code to your Emacs configuration:
+```
+(straight-use-package
+ '(tomorrow-night-deepblue-theme :type git :host github :repo "jamescherti/tomorrow-night-deepblue-theme.el"))
+(color-theme-tomorrow-night-deepblue)
+```
+
+## Manual Installation
+
 Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
 ```
 mkdir -p ~/.emacs.d/themes
@@ -28,16 +39,11 @@ git clone https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
 
 After downloading the theme, you need to modify your Emacs configuration file to include this theme. Open or create the `~/.emacs.d/init.el` directory and add the following lines of code:
 ```
-;; Add the theme's directory to the path where Emacs searches for loading files
-;; and require the Tomorrow Night Deepblue theme
+;; Add the theme's directory to the path where Emacs searches for loading
+;; files and require the Tomorrow Night Deepblue theme
 (add-to-list 'load-path "~/.emacs.d/themes/emacs-tomorrow-night-deepblue-theme")
 (require 'tomorrow-night-deepblue-theme)
-
-;; Disable all other themes
-(mapc #'disable-theme custom-enabled-themes)
-
-;; Load the Tomorrow Night Deepblue theme
-(load-theme 'tomorrow-night-deepblue)
+(color-theme-tomorrow-night-deepblue)
 ```
 
 ## Authors
