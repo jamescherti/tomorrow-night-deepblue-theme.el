@@ -1,30 +1,29 @@
 ;;; base-tomorrow-night.el --- The Tomorrow Night Deepblue color theme -*- lexical-binding: t -*-
 
-;;; Tomorrow Night Deepblue
-;;
+;; Copyright (C) 2024 James Cherti
+
 ;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces themes
-;; Version: 1
+;; Version: 1.0.0
 
 ;; This file is NOT part of GNU Emacs.
 
-;; This file is free software; you can redistribute it and/or modify it under
-;; the terms of the GNU General Public License as published by the Free
-;; Software Foundation; either version 2, or (at your option) any later
-;; version.
+;; This file is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 2, or (at your option)
+;; any later version.
 
-;; This file is distributed in the hope that it will be useful, but WITHOUT ANY
-;; WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-;; FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
-;; details.
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
 
-;; You should have received a copy of the GNU General Public License along with
-;; GNU Emacs. If not, see <https://www.gnu.org/licenses/>.
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;;
 ;; The Emacs theme Tomorrow Night Deepblue is a beautiful deep blue variant of
 ;; the Tomorrow Night theme, which is renowned for its elegant color
 ;; palette that is pleasing to the eyes.
@@ -1450,28 +1449,10 @@ are bound."
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
-;; (defun color-theme-load-tomorrow-night (mode)
-;;   "Apply the Tomorrow variant theme MODE."
-;;   (if (fboundp 'load-theme)
-;;       (let ((name (base-tomorrow-night--theme-name mode)))
-;;         (mapc #'disable-theme custom-enabled-themes)
-;;         (cond
-;;          ((> emacs-major-version 23)
-;;           (load-theme name t))
-;;          (t
-;;           (load-theme name))))
-;;     (error "The `load-theme' function is not available. Ensure you are using a compatible version of Emacs")))
-
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
-
-;; ;;;###autoload
-;; (defun color-theme-tomorrow-night-deepblue ()
-;;   "Apply the Tomorrow Night Deepblue theme."
-;;   (interactive)
-;;   (color-theme-load-tomorrow-night 'night-deepblue))
 
 (provide 'base-tomorrow-night)
 
