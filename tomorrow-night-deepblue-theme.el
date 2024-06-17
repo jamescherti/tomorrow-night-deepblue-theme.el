@@ -6,7 +6,7 @@
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces themes
-;; Version: 1.0.0
+;; Version: 1.1.0
 
 ;; This file is NOT part of GNU Emacs.
 
