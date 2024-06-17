@@ -30,7 +30,8 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to 
              :repo "jamescherti/tomorrow-night-deepblue-theme.el")
   :config
   ;; Disable all themes and load the Tomorrow Night Deep Blue theme
-  (mapc #'disable-theme custom-enabled-themes))
+  (mapc #'disable-theme custom-enabled-themes)
+  (load-theme 'tomorrow-night-deepblue t))
 ```
 
 ## Authors
