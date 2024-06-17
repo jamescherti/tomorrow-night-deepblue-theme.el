@@ -4,7 +4,7 @@
 
 ;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
-;; Package-Requires: ((emacs "26.1"))
+;; TODO
 ;; Keywords: faces themes
 ;; Version: 1.0.0
 
@@ -52,9 +52,9 @@
                        (darkblue . "#00005f")))))
 
 (defmacro base-tomorrow-night--with-colors (mode &rest body)
-  "Execute `BODY' in a scope with variables bound to various tomorrow colors.
+  "Execute BODY in a scope with variables bound to various tomorrow colors.
 
-`MODE' should be set to either day, night, night-eighties, night-blue or
+MODE should be set to either day, night, night-eighties, night-blue or
 night-bright."
   `(let* ((colors (or (cdr (assoc ,mode base-tomorrow-night))
                       (error "No such theme flavor")))
@@ -1433,14 +1433,14 @@ are bound."
   (intern (format "tomorrow-%s" (symbol-name mode))))
 
 (defmacro base-tomorrow-night--define-theme (mode)
-  "Define a theme for the tomorrow variant `MODE'."
+  "Define a theme for the tomorrow variant MODE."
   (let ((name (base-tomorrow-night--theme-name mode))
         (doc (format "tomorrow-%s" mode)))
     `(progn
        (deftheme ,name ,doc)
        (base-tomorrow-night--with-colors
         ',mode
-        (apply 'custom-theme-set-faces ',name
+        (apply 'custom-theme-set-faces #',name
                (base-tomorrow-night--face-specs))
         (custom-theme-set-variables
          ',name
