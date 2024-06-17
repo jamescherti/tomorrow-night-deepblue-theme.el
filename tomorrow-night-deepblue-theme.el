@@ -1449,12 +1449,12 @@ are bound."
          '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))
        (provide-theme ',name))))
 
+(tomorrow-night-deepblue-theme--define-theme night-deepblue)
+
 ;;;###autoload
 (when (boundp 'custom-theme-load-path)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
-
-(tomorrow-night-deepblue-theme--define-theme night-deepblue)
 
 (provide 'tomorrow-night-deepblue-theme)
 
