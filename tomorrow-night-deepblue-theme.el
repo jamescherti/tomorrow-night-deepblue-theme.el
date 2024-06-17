@@ -1436,7 +1436,7 @@ are bound."
        (deftheme ,name ,doc)
        (tomorrow-night-deepblue-theme--with-colors
         ',mode
-        (apply 'custom-theme-set-faces #',name
+        (apply #'custom-theme-set-faces ',name
                (tomorrow-night-deepblue-theme--face-specs))
         (custom-theme-set-variables
          ',name
