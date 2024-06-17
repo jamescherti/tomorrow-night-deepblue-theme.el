@@ -1428,13 +1428,9 @@ are bound."
       (foreground-color . ,foreground)
       (mouse-color . ,aqua)))))
 
-(defun tomorrow-night-deepblue-theme--theme-name (mode)
-  "Return the tomorrow theme name. MODE is the mode."
-  (intern (format "tomorrow-%s" (symbol-name mode))))
-
 (defmacro tomorrow-night-deepblue-theme--define-theme (mode)
   "Define a theme for the tomorrow variant MODE."
-  (let ((name (tomorrow-night-deepblue-theme--theme-name mode))
+  (let ((name (intern (format "tomorrow-%s" (symbol-name mode))))
         (doc (format "tomorrow-%s" mode)))
     `(progn
        (deftheme ,name ,doc)
