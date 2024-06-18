@@ -50,4 +50,4 @@ The tomorrow-night-deepblue theme is based on Tomorrow Night Blue by Chris Kemps
 - [GitHub: Tomorrow Night Deepblue Emacs theme](https://github.com/jamescherti/tomorrow-night-deepblue-theme.el)
 - [Announcement in James Cherti's website about the Tomorrow Night Deepblue Emacs theme](https://www.jamescherti.com/emacs-tomorrow-night-deepblue-theme-a-refreshing-color-scheme-with-a-deep-blue-background/)
 - [Vim version: Tomorrow Night Deepblue for the Vim editor](https://www.jamescherti.com/vim-tomorrow-night-seablue-theme-color-scheme/)
-- If you like the way Vim tabs look, you can make Emacs tab-bar look like Vim's tab bar using the [vim-tab-bar.el](https://github.com/jamescherti/vim-tab-bar.el) Emacs package.
+- [vim-tab-bar.el](https://github.com/jamescherti/vim-tab-bar.el): Make Emacs tab-bar look like Vim's tab bar.
