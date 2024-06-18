@@ -15,7 +15,7 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.screenshot.png)
 
-The theme was inspired by classic DOS text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
+The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
 
 # Installation
 
@@ -36,7 +36,7 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to 
 
 ## What are the differences between Tomorrow Night Blue and Deepblue themes?
 
-The main differences lie in the large number of additional faces and the background color, which enable support for many more modern Emacs packages. Currently, Tomorrow Night Deepblue supports over 1170 faces (compared to 333 in the original version), with a background color reminiscent of traditional DOS programs.
+The main differences lie in the large number of additional faces and the background color, which enable support for many more modern Emacs packages. Currently, Tomorrow Night Deepblue supports over 1170 faces (compared to 333 in the original version), with a background color reminiscent of classic editors.
 
 The author plans to make further changes to support even more faces. Contributions are welcome!
 
