@@ -569,7 +569,7 @@ names to which it refers are bound."
      (font-lock-variable-use-face ((,class (:inherit default))))
      (font-lock-warning-face ((,class (:weight bold :foreground ,red))))
      ;; (fringe ((,class (:background ,low-contrast-bg :foreground ,comment))))
-     (fringe ((,class (:background ,background :foregound ,comment))))
+     (fringe ((,class (:foregound ,comment))))
      (git-gutter+-added ((,class (:foreground ,green :weight bold))))
      (git-gutter+-deleted ((,class (:foreground ,red :weight bold))))
      (git-gutter+-modified ((,class (:foreground ,purple :weight bold))))
