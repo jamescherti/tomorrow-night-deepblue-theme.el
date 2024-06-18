@@ -34,6 +34,12 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to 
   (load-theme 'tomorrow-night-deepblue t))
 ```
 
+## What are the differences between Tomorrow Night Blue and Deepblue themes?
+
+The main differences lie in the large number of additional faces and the background color, which enable support for many more modern Emacs packages. Currently, Tomorrow Night Deepblue supports over 1170 faces (compared to 333 in the original version), with a background color reminiscent of traditional DOS programs.
+
+The author plans to make further changes to support even more faces. Contributions are welcome!
+
 ## Authors
 
 Tomorrow Night Deepblue theme maintainer: [James Cherti](https://www.jamescherti.com/)
