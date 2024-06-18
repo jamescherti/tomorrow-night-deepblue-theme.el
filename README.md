@@ -19,7 +19,7 @@ The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Tu
 
 # Installation
 
-## Install using straight (preferred)
+## Install using straight
 
 To install the `tomorrow-night-deepblue-theme` using `straight.el`, you need to add the following code to your Emacs configuration:
 ```
