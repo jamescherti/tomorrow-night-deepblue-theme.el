@@ -17,9 +17,9 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
 
-# Installation
+## Installation
 
-## Install using straight
+### Installation using straight
 
 To install the `tomorrow-night-deepblue-theme` using `straight.el`:
 
@@ -28,6 +28,7 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`:
 2. Add the following code to your Emacs init file:
 ```
 (use-package tomorrow-night-deepblue-theme
+  :ensure t
   :straight (tomorrow-night-deepblue-theme
              :type git
              :host github
