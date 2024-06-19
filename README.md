@@ -19,7 +19,7 @@ The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Tu
 
 ## Installation
 
-### Installation using straight
+### Installation using straight (preferred)
 
 To install the `tomorrow-night-deepblue-theme` using `straight.el`:
 
@@ -39,6 +39,24 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`:
   (load-theme 'tomorrow-night-deepblue t))
 ```
 
+## Manual Installation
+
+Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
+```
+mkdir -p ~/.emacs.d/themes
+cd ~/.emacs.d/themes
+git clone https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
+```
+
+After downloading the theme, you need to modify your Emacs configuration file to include this theme. Open or create the `~/.emacs.d/init.el` directory and add the following lines of code:
+```
+;; Add the theme's directory to the path where Emacs searches for loading
+;; files and require the Tomorrow Night Deepblue theme
+(add-to-list 'load-path "~/.emacs.d/themes/emacs-tomorrow-night-deepblue-theme")
+(require 'tomorrow-night-deepblue-theme)
+(mapc #'disable-theme custom-enabled-themes)  ;; Disable all themes
+(load-theme 'tomorrow-night-deepblue t)
+```
 ## What are the differences between Tomorrow Night Blue and Deepblue themes?
 
 The main differences lie in the large number of additional faces and the background color, which enable support for many more modern Emacs packages. Currently, Tomorrow Night Deepblue supports over 1170 faces (compared to 333 in the original version), and features a background color reminiscent of classic editors. The author plans to make further changes to support even more faces. Contributions are welcome!
