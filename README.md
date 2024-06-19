@@ -41,6 +41,8 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`:
 
 ### Manual Installation
 
+(The installation method above using `straight.el` is preferable to manual installation)
+
 Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
 ```
 mkdir -p ~/.emacs.d/themes
