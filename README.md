@@ -39,7 +39,7 @@ To install the `tomorrow-night-deepblue-theme` using `straight.el`:
   (load-theme 'tomorrow-night-deepblue t))
 ```
 
-## Manual Installation
+### Manual Installation
 
 Open a terminal and execute the following commands. These commands will create a directory for themes if it doesn't already exist, navigate into it, and then clone the theme files from the official Git repository:
 ```
