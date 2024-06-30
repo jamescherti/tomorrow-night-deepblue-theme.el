@@ -1285,7 +1285,7 @@ names to which it refers are bound."
      (syslog-info ((,class (:weight bold :foreground ,blue))))
      (syslog-su ((,class (:weight bold :foreground ,purple))))
      (syslog-warn ((,class (:weight bold :foreground ,orange))))
-     (tab-bar ((,class (:height 1.2 :foreground ,comment :background ,highlight))))
+     (tab-bar ((,class (:foreground ,comment :background ,highlight))))
      (tab-bar-tab ((,class (:background ,contrast-bg :foreground ,purple :inverse-video nil :box (:line-width 1 :style released-button)))))
      (tab-bar-tab-inactive ((,class (:inherit tab-bar-tab :background ,comment :foreground ,highlight :inverse-video t))))
      (tab-line ((,class (:foreground ,comment :background ,highlight))))
