@@ -975,11 +975,15 @@ names to which it refers are bound."
      (magit-signature-untrusted ((,class (:foreground ,aqua))))
      (magit-tag ((,class (:foreground ,yellow))))
      ;; (markdown-code-face ((,class (:inherit fixed-pitch :background ,background :foreground ,purple))))
-     (markdown-code-face ((,class (:inherit fixed-pitch :foreground ,purple))))
+     ;; TODO check
+     ;; (markdown-code-face ((,class (:inherit fixed-pitch :foreground ,purple))))
+     (markdown-code-face ((,class (:foreground ,purple))))
      (markdown-inline-code-face ((,class (:inherit markdown-code-face))))
      (markdown-link-face ((,class (:foreground ,blue :underline t))))
      (markdown-url-face ((,class (:inherit link))))
-     (markup-code-face ((,class (:inherit fixed-pitch :background ,background :foreground ,purple))))
+     ;; TODO check if fixed-pitch is required
+     ;; (markup-code-face ((,class (:inherit fixed-pitch :background ,background :foreground ,purple))))
+     (markup-code-face ((,class (:background ,background :foreground ,purple))))
      (markup-complex-replacement-face ((,class (:background ,background))))
      (markup-error-face ((,class (:foreground ,red :background ,background :weight bold))))
      (markup-gen-face ((,class (:foreground ,blue))))
