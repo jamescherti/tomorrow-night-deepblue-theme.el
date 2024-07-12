@@ -554,6 +554,7 @@ names to which it refers are bound."
      ;; (font-lock-operator-face ((,class (:foreground ,orange))))  ;; chg
      (font-lock-operator-face ((,class (:foreground ,blue))))
      (font-lock-preprocessor-face ((,class (:foreground ,purple))))
+     (font-lock-variable-name-face ((,class (:foreground ,orange))))
      (font-lock-property-name-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-property-use-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-punctuation-face ((,class (:inherit default))))
@@ -564,7 +565,6 @@ names to which it refers are bound."
      (font-lock-string-face ((,class (:foreground ,green))))
      (font-lock-type-face ((,class (:foreground ,blue))))
      ;; (font-lock-type-face ((,class (:foreground ,yellow))))  ;; chg
-     (font-lock-variable-name-face ((,class (:foreground ,orange))))
      ;; (font-lock-variable-name-face ((,class (:foreground ,yellow))))
      ;; (font-lock-variable-use-face ((,class (:inherit font-lock-variable-name-face)))) ;; chg
      (font-lock-variable-use-face ((,class (:inherit default))))
