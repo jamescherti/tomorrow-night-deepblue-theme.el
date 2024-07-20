@@ -1206,7 +1206,9 @@ names to which it refers are bound."
      (rainbow-delimiters-depth-7-face ((,class (:foreground ,red))))
      (rainbow-delimiters-depth-8-face ((,class (:foreground ,comment))))
      (rainbow-delimiters-depth-9-face ((,class (:foreground ,foreground))))
-     (rainbow-delimiters-unmatched-face ((,class (:foreground ,red))))
+     (rainbow-delimiters-unmatched-face ((,class
+                                          (:foreground ,background
+                                                       :background ,red))))
      (rcirc-bright-nick ((,class (:foreground ,yellow))))
      (rcirc-dim-nick ((,class (:foreground ,comment))))
      (rcirc-keyword ((,class (:foreground ,green))))
