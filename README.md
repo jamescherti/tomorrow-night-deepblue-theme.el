@@ -36,9 +36,11 @@ The `tomorrow-night-deepblue` theme can be installed from MELPA by adding the fo
 The main differences lie in the background and a large number of additional faces, which enable support for many more modern Emacs packages. Currently, Tomorrow Night Deepblue supports over 1,170 faces (compared to 333 in the original version), featuring a background color reminiscent of classic editors. The author plans to make further changes to support even more faces. Contributions are welcome!
 
 The background is also different. Here is the background color of the Tomorrow Night Deepblue:
+
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.background-tomorrow-night-deepblue.png)
 
 And this background color or the Tomorrow Night Blue, the previous version upon which this theme is based:
+
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.background-tomorrow-night-blue.png)
 
 ## Authors
