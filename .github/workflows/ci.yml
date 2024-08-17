@@ -67,7 +67,7 @@ jobs:
 
       - name: Run melpazoid
         env:
-          RECIPE: (dir-config :repo "jamescherti/dir-config.el" :branch "${{ github.ref_name }}" :fetcher github :files ("tomorrow-night-deepblue-theme.el"))
+          RECIPE: (tomorrow-night-deepblue-theme :repo "jamescherti/tomorrow-night-deepblue-theme.el" :branch "${{ github.ref_name }}" :fetcher github :files ("tomorrow-night-deepblue-theme.el"))
           EXIST_OK: false
         run: echo $GITHUB_REF && make -C ~/melpazoid
 
