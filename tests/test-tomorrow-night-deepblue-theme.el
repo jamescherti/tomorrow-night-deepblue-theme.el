@@ -30,6 +30,8 @@
 (defun test-tomorrow-night-deepblue-theme ()
   "Test tomorrow-night-deepblue-theme."
   (interactive)
+  ;; Testing: Only Melpazoid checks are currently implemented
+  ;; (see Makefile for details)
   t)
 
 (provide 'test-tomorrow-night-deepblue-theme)
