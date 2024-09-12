@@ -19,7 +19,7 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.screenshot.png)
 
-The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Turbo Pascal, which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
+The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Turbo Pascal, as well as tools such as Midnight Commander which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
 
 ## Installation
 
