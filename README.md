@@ -23,7 +23,11 @@ The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Tu
 
 ## Installation
 
-The `tomorrow-night-deepblue` theme can be installed from MELPA by adding the following to your init.el:
+To install the `tomorrow-night-deepblue-theme` from MELPA:
+
+1. If you haven't already done so, [add MELPA repository to your Emacs configuration](https://melpa.org/#/getting-started).
+
+2. Add the following code to your Emacs init file to install `tomorrow-night-deepblue` to install it from MELPA:
 ``` emacs-lisp
 (use-package tomorrow-night-deepblue-theme
   :ensure t
