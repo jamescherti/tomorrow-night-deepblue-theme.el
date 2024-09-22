@@ -127,7 +127,7 @@ names to which it refers are bound."
    (font-lock-variable-use-face ((,class (:inherit font-lock-variable-name-face))))
    (font-lock-string-face ((,class (:foreground ,green))))
    (font-lock-regexp-face ((,class (:inherit font-lock-string-face))))
-   (font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
+   (font-lock-regexp-grouping-backslash ((,class (:foreground ,orange))))
    (font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
    (font-lock-type-face ((,class (:foreground ,blue))))
    (mode-line ((,class (:foreground ,foreground :background ,contrast-bg :weight normal :box (:line-width 1 :color ,contrast-bg)))))
