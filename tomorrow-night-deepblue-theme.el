@@ -623,6 +623,8 @@ names to which it refers are bound."
    (hi-red-b ((,class (:foreground ,red :weight bold))))
    (hi-yellow ((,class (:foreground ,background :background ,yellow))))
    (hl-line ((,class (:background ,hl-line))))
+   (highlight-indentation-face ((,class (:background ,hl-line))))
+   (highlight-indentation-current-column-mode ((,class (:background ,contrast-bg))))
    (hl-sexp-face ((,class (:background ,contrast-bg))))
    (holiday ((,class (:foreground ,background :background ,orange))))
    (hydra-face-amaranth ((,class (:foreground ,orange))))
