@@ -23,7 +23,7 @@ The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Tu
 
 ## Installation
 
-To install the `tomorrow-night-deepblue-theme` from MELPA:
+To install `tomorrow-night-deepblue-theme` from MELPA:
 
 1. If you haven't already done so, [add MELPA repository to your Emacs configuration](https://melpa.org/#/getting-started).
 
