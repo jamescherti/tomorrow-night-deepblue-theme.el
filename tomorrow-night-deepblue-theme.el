@@ -115,7 +115,6 @@ names to which it refers are bound."
    (font-lock-function-name-face ((,class (:foreground ,blue))))
    (font-lock-function-call-face ((,class (:foreground ,blue))))
    (font-lock-keyword-face ((,class (:foreground ,purple))))
-   (font-lock-punctuation-face ((,class (:inherit default))))
    (font-lock-misc-punctuation-face ((,class (:inherit font-lock-punctuation-face))))
    (font-lock-negation-char-face ((,class (:foreground ,orange))))
    (font-lock-number-face ((,class (:foreground ,blue))))
