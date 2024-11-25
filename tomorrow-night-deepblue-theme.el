@@ -515,7 +515,7 @@ names to which it refers are bound."
    (font-latex-string-face ((,class (:foreground ,yellow))))
    (font-latex-verbatim-face ((,class (:foreground ,orange))))
    (font-latex-warning-face ((,class (:inherit warning))))
-   (fringe ((,class (:foregound ,comment))))
+   (fringe ((,class (:inherit font-lock-comment-face))))
    (git-gutter+-added ((,class (:foreground ,green :weight bold))))
    (git-gutter+-deleted ((,class (:foreground ,red :weight bold))))
    (git-gutter+-modified ((,class (:foreground ,purple :weight bold))))
