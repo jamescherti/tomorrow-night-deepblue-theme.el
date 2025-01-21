@@ -1,6 +1,6 @@
 ;;; tomorrow-night-deepblue-theme.el --- The Tomorrow Night Deepblue color theme -*- lexical-binding: t -*-
 
-;; Copyright (C) 2024 James Cherti
+;; Copyright (C) 2024-2025 James Cherti
 
 ;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el

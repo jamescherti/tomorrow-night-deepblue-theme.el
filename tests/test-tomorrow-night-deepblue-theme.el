@@ -1,6 +1,6 @@
 ;;; test-tomorrow-night-deepblue-theme.el --- Test tomorrow-night-deepblue-theme -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 James Cherti | https://www.jamescherti.com/contact/
+;; Copyright (C) 2024-2025 James Cherti | https://www.jamescherti.com/contact/
 
 ;; Author: James Cherti
 ;; URL: https://github.com/jamescherti/tomorrow-night-deepblue-theme.el
