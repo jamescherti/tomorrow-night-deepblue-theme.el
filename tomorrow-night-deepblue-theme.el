@@ -939,6 +939,7 @@ names to which it refers are bound."
      (org-block ((,class (:background ,code))))
      (org-block-begin-line ((,class (:foreground ,blue :background ,code2 :extend t))))
      (org-block-end-line ((,class (:foreground ,blue :background ,code2 :extend t))))
+     (org-verbatim ((,class (:foreground ,orange))))
      (org-code ((,class (:foreground ,yellow :background ,code))))
      (org-column ((,class (:background ,current-line))))
      (org-column-title ((,class (:inherit org-column :weight bold :underline t))))
