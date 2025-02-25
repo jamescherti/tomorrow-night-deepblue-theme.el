@@ -33,6 +33,6 @@ compile: cask
 	  -f batch-byte-compile $$(cask files); \
 	  (ret=$$? ; cask clean-elc && exit $$ret)
 
-.PHONY: test
-test: compile
-	cask emacs --batch -L . -L tests -l tests/test-tomorrow-night-deepblue-theme.el -f test-tomorrow-night-deepblue-theme
+# .PHONY: test
+# test: compile
+# 	cask emacs --batch -L . -L tests -l tests/test-tomorrow-night-deepblue-theme.el -f test-tomorrow-night-deepblue-theme

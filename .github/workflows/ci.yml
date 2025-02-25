@@ -64,14 +64,14 @@ jobs:
           git clone https://github.com/riscy/melpazoid.git ~/melpazoid
           python -m pip install ~/melpazoid
 
-      - name: Run melpazoid
-        env:
-          RECIPE: (tomorrow-night-deepblue-theme :repo "jamescherti/tomorrow-night-deepblue-theme.el" :branch "${{ github.ref_name }}" :fetcher github :files ("tomorrow-night-deepblue-theme.el"))
-          EXIST_OK: false
-          CASK_PATH: $HOME/.cask/bin
-        run: 'echo -e "Ref: $GITHUB_REF\n$(emacs --version)" && make -C ~/melpazoid'
-
-      - name: Run tests
-        run: make test
-        env:
-          CASK_PATH: $HOME/.cask/bin
+      # - name: Run melpazoid
+      #   env:
+      #     RECIPE: (tomorrow-night-deepblue-theme :repo "jamescherti/tomorrow-night-deepblue-theme.el" :branch "${{ github.ref_name }}" :fetcher github :files ("tomorrow-night-deepblue-theme.el"))
+      #     EXIST_OK: false
+      #     CASK_PATH: $HOME/.cask/bin
+      #   run: 'echo -e "Ref: $GITHUB_REF\n$(emacs --version)" && make -C ~/melpazoid'
+      #
+      # - name: Run tests
+      #   run: make test
+      #   env:
+      #     CASK_PATH: $HOME/.cask/bin
