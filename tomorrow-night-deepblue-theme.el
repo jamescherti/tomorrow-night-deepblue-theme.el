@@ -888,7 +888,7 @@ names to which it refers are bound."
      (markdown-url-face ((,class (:inherit link))))
      (markup-code-face ((,class (:foreground ,purple))))
      (markup-complex-replacement-face ((,class (:background ,background))))
-     (markup-error-face ((,class (:foreground ,red :weight bold))))
+     (markup-error-face ((,class (:foreground ,red :background ,background :weight bold))))
      (markup-gen-face ((,class (:foreground ,blue))))
      (markup-list-face ((,class (:foreground unspecified :background unspecified))))
      (markup-meta-face ((,class (:foreground ,comment))))
