@@ -152,6 +152,7 @@ names to which it refers are bound."
      (font-lock-escape-face ((,class (:foreground ,yellow))))
      (font-lock-function-name-face ((,class (:foreground ,blue))))
      (font-lock-function-call-face ((,class (:foreground ,blue))))
+     (highlight-defined-face-name-face ((,class (:foreground ,foreground))))
      (font-lock-keyword-face ((,class (:foreground ,purple))))
      (font-lock-misc-punctuation-face ((,class (:inherit font-lock-punctuation-face))))
      (font-lock-negation-char-face ((,class (:foreground ,orange))))
