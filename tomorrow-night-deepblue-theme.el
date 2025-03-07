@@ -161,6 +161,7 @@ names to which it refers are bound."
      (font-lock-preprocessor-face ((,class (:foreground ,purple))))
      ;; (font-lock-variable-name-face ((,class (:foreground ,yellow))))
      (font-lock-variable-name-face ((,class (:foreground ,orange))))
+     (font-lock-property-use-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-property-name-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-variable-use-face ((,class (:inherit font-lock-variable-name-face))))
      (font-lock-string-face ((,class (:foreground ,green))))
