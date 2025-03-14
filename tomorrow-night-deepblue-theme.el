@@ -375,7 +375,7 @@ names to which it refers are bound."
      (vdiff-closed-fold-face ((,class (:foreground ,blue :background ,darkblue))))
      (vdiff-refine-changed ((,class (:foreground ,background :background ,blue))))
      (diff-context ((,class ())))
-     (yas-field-highlight-face ((,class (:background ,bg-added))))
+     (yas-field-highlight-face ((,class (:background ,contrast-bg))))
      (diff-added ((,class (:background ,bg-added :foreground ,fg-added))))
      (diff-changed ((,class (:background ,bg-changed :foreground ,fg-changed :extend t))))
      (diff-removed ((,class (:background ,bg-removed :foreground ,fg-removed))))
