@@ -1,6 +1,7 @@
 # tomorrow-night-deepblue-theme.el (Emacs theme)
-[![MELPA](https://melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://melpa.org/#/tomorrow-night-deepblue-theme)
 ![Build Status](https://github.com/jamescherti/tomorrow-night-deepblue-theme.el/actions/workflows/ci.yml/badge.svg)
+[![MELPA](https://melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://melpa.org/#/tomorrow-night-deepblue-theme)
+[![MELPA Stable](https://stable.melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://stable.melpa.org/#/tomorrow-night-deepblue-theme)
 ![License](https://img.shields.io/github/license/jamescherti/tomorrow-night-deepblue-theme.el)
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/main/.images/made-for-gnu-emacs.svg)
 
