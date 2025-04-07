@@ -914,6 +914,7 @@ names to which it refers are bound."
      (message-separator ((,class (:foreground ,purple))))
      (mini-modeline-mode-line ((,class (:inherit mode-line :height 0.1 :box nil))))
      (minibuffer-prompt ((,class (:foreground ,blue))))
+     (help-key-binding ((,class (:background ,low-contrast-bg :inherit minibuffer-prompt))))  ; Used by `y-or-n-p'
      (mm-uu-extract ((,class (:foreground ,green :background ,highlight))))
      (mm/master-face ((,class (:inherit region :foreground unspecified :background unspecified))))
      (mm/mirror-face ((,class (:inherit region :foreground nil :background unspecified))))
