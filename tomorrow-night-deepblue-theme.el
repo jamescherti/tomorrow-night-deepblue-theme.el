@@ -212,7 +212,7 @@ names to which it refers are bound."
      (flymake-warning-echo ((,class (:foreground ,orange))))
      (flymake-warning-echo-at-eol ((,class (:inherit flymake-end-of-line-diagnostics-face :foreground ,orange))))
      (flymake-warnline ((,class (:underline ,orange))))
-     (show-paren-match ((,class (:background ,purple))))
+     (show-paren-match ((,class (:inverse-video t))))
      (show-paren-mismatch ((,class (:background ,red))))
      (Info-quoted ((,class (:inherit font-lock-constant-face))))
      (TeX-fold-folded-face ((,class (:foreground ,purple))))
