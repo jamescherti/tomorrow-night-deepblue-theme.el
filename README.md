@@ -18,7 +18,7 @@ The **Tomorrow Night Deepblue theme** features a deep blue background color that
 
 ## Screenshot
 
-![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.screenshot.png)
+![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/screenshot.png)
 
 The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and Turbo Pascal, as well as tools such as Midnight Commander which featured blue backgrounds by default. There's something special about the early days of programming and the tools we used that brings back fond memories.
 
@@ -45,11 +45,11 @@ The main differences lie in the background and a large number of additional face
 
 The background is also different. Here is the background color of the Tomorrow Night Deepblue:
 
-![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/.background-tomorrow-night-deepblue.png)
+![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/background-tomorrow-night-deepblue.png)
 
 And this background color or the Tomorrow Night Blue, the previous version upon which this theme is based:
 
-![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/.background-tomorrow-night-blue.png)
+![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/background-tomorrow-night-blue.png)
 
 ## Authors
 
