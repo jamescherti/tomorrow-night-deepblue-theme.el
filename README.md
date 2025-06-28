@@ -45,11 +45,11 @@ The main differences lie in the background and a large number of additional face
 
 The background is also different. Here is the background color of the Tomorrow Night Deepblue:
 
-![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.background-tomorrow-night-deepblue.png)
+![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/.background-tomorrow-night-deepblue.png)
 
 And this background color or the Tomorrow Night Blue, the previous version upon which this theme is based:
 
-![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.background-tomorrow-night-blue.png)
+![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/master/.images/.background-tomorrow-night-blue.png)
 
 ## Authors
 
