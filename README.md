@@ -4,6 +4,7 @@
 [![MELPA Stable](https://stable.melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://stable.melpa.org/#/tomorrow-night-deepblue-theme)
 ![License](https://img.shields.io/github/license/jamescherti/tomorrow-night-deepblue-theme.el)
 ![](https://raw.githubusercontent.com/jamescherti/tomorrow-night-deepblue-theme.el/main/.images/made-for-gnu-emacs.svg)
+![](https://jamescherti.com/misc/made-for-gnu-emacs.svg)
 
 The **Tomorrow Night Deepblue Emacs theme** is a beautiful deep blue variant of the Tomorrow Night theme, which is renowned for its elegant color palette that is pleasing to the eyes.
 
