@@ -921,11 +921,8 @@ names to which it refers are bound."
      (markup-title-5-face ((,class (:foreground ,purple :weight bold))))
      (markup-typewriter-face ((,class (:inherit shadow))))
      (markup-verbatim-face ((,class (:inherit shadow :background ,background))))
-     ,@(cond
-        ((eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander)
-         `((menu ((,class (:foreground ,background :background ,aqua))))))
-        (t
-         `((menu ((,class (:foreground ,foreground :background ,highlight)))))))
+     (menu ((,class (:foreground ,(if (eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander) background foreground)
+                                 :background ,(if (eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander) aqua highlight)))))
      (meow-beacon-fake-cursor ((,class (:foreground ,orange :inverse-video t))))
      (meow-search-highlight ((,class (:inherit lazy-highlight))))
      (merlin-compilation-error-face ((,class (:inherit flycheck-error))))
@@ -1188,11 +1185,8 @@ names to which it refers are bound."
      (ruler-mode-margins ((,class (:foreground ,orange :background ,contrast-bg))))
      (ruler-mode-pad ((,class (:foreground ,background :background ,comment))))
      (ruler-mode-tab-stop ((,class (:foreground ,blue :background ,contrast-bg))))
-     ,@(cond
-        ((eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander)
-         `((scroll-bar ((,class (:foreground ,aqua))))))
-        (t
-         `((scroll-bar ((,class (:foreground unspecified :background unspecified)))))))
+     (scroll-bar ((,class (:foreground ,(if (eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander) aqua 'unspecified)
+                                       :background unspecified))))
      (secondary-selection ((,class (:background ,highlight :extend t))))
      (selectrum-completion-docsig ((,class (:inherit completions-annotation :underline t))))
      (selectrum-current-candidate ((,class (:background ,contrast-bg))))
