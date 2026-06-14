@@ -32,7 +32,7 @@
 ;; The Tomorrow Night Deepblue features a deep blue background color that
 ;; creates a calming atmosphere. The contrasting colors make it easy to
 ;; distinguish between different elements of your code. The
-;; tomorrow-night-deepblue theme is also a great choice for programmer who miss
+;; tomorrow-night-deepblue theme is also a great choice for those who miss
 ;; the blue themes that were trendy a few years ago.
 ;;
 ;; The theme was inspired by classic text editors such as QuickBASIC, RHIDE, and
@@ -56,6 +56,18 @@
 ;;
 
 ;;; Code:
+
+(defgroup tomorrow-night-deepblue-theme nil
+  "Tomorrow Night Deepblue theme options."
+  :group 'faces)
+
+(defcustom tomorrow-night-deepblue-theme-ui-style 'default
+  "Select the style for the tomorrow-night-deepblue theme.
+Set to \='mc to enable Midnight Commander style UI elements (e.g., menu and
+scroll bar)."
+  :type '(choice (const :tag "Default style" default)
+                 (const :tag "Midnight Commander style" midnight-commander))
+  :group 'tomorrow-night-deepblue-theme)
 
 (defconst tomorrow-night-deepblue-theme
   '((night-deepblue . ((background . "#00006f")
@@ -531,7 +543,7 @@ names to which it refers are bound."
      (eshell-ls-archive ((,class (:foreground ,blue))))
      (eshell-ls-backup ((,class (:foreground ,comment))))
      (eshell-ls-clutter ((,class (:foreground ,orange :weight bold))))
-     (eshell-ls-directory ((,class :foreground ,blue :weight bold)))
+     (eshell-ls-directory ((,class (:foreground ,blue :weight bold))))
      (eshell-ls-executable ((,class (:foreground ,yellow :weight bold))))
      (eshell-ls-missing ((,class (:foreground ,red :weight bold))))
      (eshell-ls-product ((,class (:foreground ,green))))
@@ -757,11 +769,11 @@ names to which it refers are bound."
      (jabber-rare-time-face ((,class (:foreground ,comment))))
      (jabber-roster-user-away ((,class (:foreground ,orange))))
      (jabber-roster-user-chatty ((,class (:foreground ,purple))))
-     (jabber-roster-user-dnd ((,class :foreground ,yellow)))
+     (jabber-roster-user-dnd ((,class (:foreground ,yellow))))
      (jabber-roster-user-error ((,class (:foreground ,red))))
      (jabber-roster-user-offline ((,class (:foreground ,comment))))
      (jabber-roster-user-online ((,class (:foreground ,green))))
-     (jabber-roster-user-xa ((,class :foreground ,comment)))
+     (jabber-roster-user-xa ((,class (:foreground ,comment))))
      (js2-error ((,class (:foreground unspecified :underline ,red))))
      (js2-external-variable ((,class (:foreground ,purple))))
      (js2-external-variable-face ((,class (:foreground ,purple))))
@@ -909,6 +921,11 @@ names to which it refers are bound."
      (markup-title-5-face ((,class (:foreground ,purple :weight bold))))
      (markup-typewriter-face ((,class (:inherit shadow))))
      (markup-verbatim-face ((,class (:inherit shadow :background ,background))))
+     ,@(cond
+        ((eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander)
+         `((menu ((,class (:foreground ,background :background ,aqua))))))
+        (t
+         `((menu ((,class (:foreground ,foreground :background ,highlight)))))))
      (meow-beacon-fake-cursor ((,class (:foreground ,orange :inverse-video t))))
      (meow-search-highlight ((,class (:inherit lazy-highlight))))
      (merlin-compilation-error-face ((,class (:inherit flycheck-error))))
@@ -1171,6 +1188,11 @@ names to which it refers are bound."
      (ruler-mode-margins ((,class (:foreground ,orange :background ,contrast-bg))))
      (ruler-mode-pad ((,class (:foreground ,background :background ,comment))))
      (ruler-mode-tab-stop ((,class (:foreground ,blue :background ,contrast-bg))))
+     ,@(cond
+        ((eq tomorrow-night-deepblue-theme-ui-style 'midnight-commander)
+         `((scroll-bar ((,class (:foreground ,aqua))))))
+        (t
+         `((scroll-bar ((,class (:foreground unspecified :background unspecified)))))))
      (secondary-selection ((,class (:background ,highlight :extend t))))
      (selectrum-completion-docsig ((,class (:inherit completions-annotation :underline t))))
      (selectrum-current-candidate ((,class (:background ,contrast-bg))))
@@ -1211,7 +1233,7 @@ names to which it refers are bound."
      (symbol-overlay-default-face ((,class (:inherit highlight :underline t))))
      (syslog-debug ((,class (:weight bold :foreground ,green))))
      (syslog-error ((,class (:weight bold :foreground ,red))))
-     (syslog-hide ((,class (:foregound ,comment))))
+     (syslog-hide ((,class (:foreground ,comment))))
      (syslog-info ((,class (:weight bold :foreground ,blue))))
      (syslog-su ((,class (:weight bold :foreground ,purple))))
      (syslog-warn ((,class (:weight bold :foreground ,orange))))
@@ -1219,7 +1241,7 @@ names to which it refers are bound."
      (tab-bar-tab-inactive ((,class (:foreground ,comment :background ,highlight :box (:line-width 3 :color ,highlight :style nil)))))
      (tab-bar-tab ((,class (:background ,background :foreground ,foreground :box (:line-width 3 :color ,background :style nil)))))
      (tab-bar-tab-ungrouped ((,class (:inherit tab-bar-tab-inactive))))
-     (tab-bar-tab-group-current ((,class (:inherit tab-bar-tab :foregound ,purple))))
+     (tab-bar-tab-group-current ((,class (:inherit tab-bar-tab :foreground ,purple))))
      (tab-bar-tab-group-inactive ((,class (:inherit tab-bar-tab-inactive))))
      (tab-line ((,class (:inherit tab-bar))))
      (tab-line-tab-inactive ((,class (:inherit tab-bar-tab-inactive))))
@@ -1242,9 +1264,9 @@ names to which it refers are bound."
      (tuareg-font-lock-constructor-face ((,class (:inherit default :weight bold))))
      (tuareg-font-lock-error-face ((,class (:inherit error :slant italic))))
      (tuareg-font-lock-governing-face ((,class (:inherit font-lock-keyword-face :weight bold))))
-     (tuareg-font-lock-interactive-directive-face)
+     (tuareg-font-lock-interactive-directive-face ((,class (:inherit default))))
      (tuareg-font-lock-interactive-error-face ((,class (:inherit error))))
-     (tuareg-font-lock-interactive-output-face)
+     (tuareg-font-lock-interactive-output-face ((,class (:inherit default))))
      (tuareg-font-lock-line-number-face ((,class (:foreground ,comment))))
      (tuareg-font-lock-multistage-face ((,class (:inherit font-lock-preprocessor-face))))
      (tuareg-font-lock-operator-face ((,class (:inherit font-lock-preprocessor-face))))
@@ -1324,23 +1346,22 @@ names to which it refers are bound."
      (window-divider-last-pixel ((,class (:foreground ,contrast-bg))))
      (ztreep-arrow-face ((,class (:foreground ,highlight))))
      (ztreep-diff-header-face ((,class (:foreground ,yellow :weight bold))))
-     (ztreep-diff-header-small-face ((,class (:foregorund ,yellow))))
+     (ztreep-diff-header-small-face ((,class (:foreground ,yellow))))
      (ztreep-diff-model-add-face ((,class (:foreground ,green))))
      (ztreep-diff-model-diff-face ((,class (:foreground ,red))))
      (ztreep-diff-model-ignored-face ((,class (:foreground ,orange))))
      (ztreep-diff-model-normal-face ((,class (:foreground ,foreground))))
      (ztreep-expand-sign-face ((,class (:foreground ,foreground))))
-     (ztreep-header-face ((,class (:forground ,yellow :weight bold))))
+     (ztreep-header-face ((,class (:foreground ,yellow :weight bold))))
      (ztreep-leaf-face ((,class (:foreground ,aqua))))
      (ztreep-node-face ((,class (:foreground ,foreground)))))))
 
 (defmacro tomorrow-night-deepblue-theme--frame-parameter-specs ()
-  "Define a list of frame parameter and return a backquote which .
-
-These are required by color-theme's `color-theme-install', but
-not by the new `deftheme' mechanism. It expects to be evaluated
-in a scope in which the various color names to which it refers
-are bound."
+  "Return a backquote containing a list of frame parameter specifications.
+These specifications are required by color-theme's `color-theme-install', but
+not by the newer `deftheme'. The macro expects to be evaluated in a scope where
+the relevant color names (such as `background', `foreground', `purple', and
+`aqua') are bound."
   (quote
    `(((background-color . ,background)
       (background-mode . light)
