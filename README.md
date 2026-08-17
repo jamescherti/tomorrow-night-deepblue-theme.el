@@ -1,4 +1,4 @@
-# tomorrow-night-deepblue-theme.el (Emacs theme)
+# tomorrow-night-deepblue-theme.el - A beautiful deep blue Emacs theme
 ![Build Status](https://github.com/jamescherti/tomorrow-night-deepblue-theme.el/actions/workflows/melpazoid.yml/badge.svg)
 [![MELPA](https://melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://melpa.org/#/tomorrow-night-deepblue-theme)
 [![MELPA Stable](https://stable.melpa.org/packages/tomorrow-night-deepblue-theme-badge.svg)](https://stable.melpa.org/#/tomorrow-night-deepblue-theme)
