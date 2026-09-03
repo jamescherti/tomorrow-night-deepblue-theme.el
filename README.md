@@ -33,7 +33,7 @@ To install `tomorrow-night-deepblue-theme` from MELPA:
 2. Add the following code to your Emacs init file to install `tomorrow-night-deepblue` from MELPA:
 ``` emacs-lisp
 (use-package tomorrow-night-deepblue-theme
-  :init
+  :config
   (let ((inhibit-redisplay t))
     ;; Disable all active themes
     (mapc #'disable-theme custom-enabled-themes)
