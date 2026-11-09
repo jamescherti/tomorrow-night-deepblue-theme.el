@@ -1384,8 +1384,10 @@ the relevant color names (such as `background', `foreground', `purple', and
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+  (let ((theme-dir (file-name-as-directory
+                    (file-name-directory load-file-name))))
+    (unless (member theme-dir custom-theme-load-path)
+      (push theme-dir custom-theme-load-path))))
 
 (provide 'tomorrow-night-deepblue-theme)
 
